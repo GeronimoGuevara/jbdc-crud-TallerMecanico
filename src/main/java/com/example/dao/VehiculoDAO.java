@@ -1,4 +1,10 @@
 package com.example.dao;
 
-public interface VehiculoDAO {
+import com.example.model.Vehiculo;
+
+public interface VehiculoDAO extends GenericDAO<Vehiculo, Integer> {
+
+    public void crearTablaVehiculos();
+
+
 }
